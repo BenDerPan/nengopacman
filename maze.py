@@ -115,4 +115,4 @@ def generateMaze(num_rows, num_cols, num_ghosts=3, seed=None, num_passage=6):
     return new
 
 if __name__ == '__main__':
-    print generateMaze(4, 4, num_ghosts=3, seed=None)
+    print (generateMaze(4, 4, num_ghosts=3, seed=None))
