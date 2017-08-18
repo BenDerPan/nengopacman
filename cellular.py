@@ -118,7 +118,7 @@ class World:
         self.directions = directions
         if filename or map:
             if filename:
-                data = file(filename).readlines()
+                data = open(filename).readlines()
             else:
                 data = map.splitlines()
                 if len(data[0]) == 0:
@@ -174,7 +174,7 @@ class World:
         if not hasattr(self.Cell, 'save'):
             return
         if isinstance(f, type('')):
-            f = file(f, 'w')
+            f = open(f, 'w')
 
         total = ''
         for j in range(self.height):
@@ -193,7 +193,7 @@ class World:
             return
         if filename:
             if isinstance(filename, type('')):
-                filename = file(filename)
+                filename = open(filename)
             lines = filename.readlines()
         else:
             lines = map.splitlines()
