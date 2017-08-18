@@ -78,3 +78,8 @@ with model:
             def run_away(x):
                 return -1*x[1], -1*x[0]
             nengo.Connection(enemy, move, function=run_away)
+
+
+if __name__=="__main__":
+    import nengo_gui
+    nengo_gui.GUI(__file__).start()

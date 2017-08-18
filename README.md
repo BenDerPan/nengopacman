@@ -15,7 +15,8 @@ This project is compatible with Python 3.5.x and has dependencies on Nengo and N
 
 Next, clone/fork this project from Github and run it from a terminal.
 
- `nengo pacman.py`
+* `python pacman.py`   
+* The GUI server will start at [http://localhost:8080](http://localhost:8080)
  
 
 ## Neural Network Architecture
