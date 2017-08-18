@@ -45,7 +45,7 @@ class Cell(cellular.Cell):
         if(row%100==0):
             global col
             col+=1
-            global counter
+            #global counter
             counter = 0
         if char == '#':
             global hashct
@@ -66,7 +66,7 @@ class GridNode(nengo.Node):
         # The initalizer sets up the html layout for display
         def svg(t):
             last_t = getattr(svg, '_nengo_html_t_', None)
-            if t <= last_t:
+            if last_t and  t <= last_t:
                 last_t = None
             if last_t is None or t >= last_t + dt:
                 svg._nengo_html_ = self.generate_svg(world)
