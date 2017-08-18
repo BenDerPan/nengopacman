@@ -1,5 +1,7 @@
 # Nengo Pacman Python3.5.x 版本
 
+# Forked from https://github.com/arnav-gudibande/nengopacman
+
 ![pacman](https://cloud.githubusercontent.com/assets/15108659/16967655/ecd43682-4dbe-11e6-9c5c-04300d215cc0.gif)
 
 ## Installation
@@ -7,6 +9,7 @@
 This project is compatible with Python 3.5.x and has dependencies on Nengo and Nengo GUI. Ensure you have installed both before running the project.
 
 * Install [nengo](https://github.com/nengo/nengo)
+  * `pip install nengo`
 * Use pip to install the nengo gui
   * `pip install nengo_gui`
 
