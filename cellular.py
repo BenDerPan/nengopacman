@@ -206,11 +206,13 @@ class World:
             fh = self.height
             starty = 0
         else:
+            #确保索引是整数
             starty = int((self.height - fh) / 2)
         if fw > self.width:
             fw = self.width
             startx = 0
         else:
+            # 确保索引是整数
             startx = int((self.width - fw) / 2)
 
         self.reset()

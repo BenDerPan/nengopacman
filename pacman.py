@@ -1,6 +1,5 @@
 import nengo
 import pacman_world
-#reload(pacman_world)
 from random import randint
 import numpy as np
 import random
